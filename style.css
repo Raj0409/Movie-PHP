@@ -1,0 +1,408 @@
+/*--------- Navigation bar -----------*/
+/*====================================*/
+
+.ul-class {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #333b;*/
+  border: 2px solid #ffc40c;
+  border-radius: 10px;
+}
+
+.li-class {
+  float: left;
+  background-color: #333b;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: arial;
+}
+
+li a:hover:not(.active) {
+  background-color: #ffc40c;
+  /*text-shadow: 3px 3px 5px white;*/
+  color:black;
+  float: right;
+}
+
+.active {
+  background-color: #ffc40c;
+  color:black;
+  float: right;
+}
+
+#a1{
+  background-color: #ffc40c;
+  color:black;  
+}
+
+/*-------------- search bar ----------------*/
+/*=========================================*/
+form.form-search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width:85%;
+  background: lightgrey;
+  border-radius: 10px; 
+}
+
+form.form-search button {
+  float: left;
+  width:15%;
+  padding: 10px;
+  background: grey;
+  color: black;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+  border-radius: 10px; 
+  outline: none;
+}
+
+form.form-search button:hover {
+  background: #ffc40c;
+  border: 1px solid #ffc40c;
+}
+
+form.form-search::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*------------- Slide show ---------------*/
+/*========================================*/
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+#image
+{
+    filter: drop-shadow(1px 10px 20px #795548);/*#795548*/
+    border-radius: 10px;
+}
+/*#image:hover {
+    cursor: pointer;
+}*/
+
+/*----------- see all ------------*/
+/*================================*/
+#sall{
+  font-size: 25px;
+  padding-left: 100px;
+  color: white;
+  font-weight: bold;
+  text-shadow: 3px 3px 7px black; 
+}
+
+#sall:hover{
+ text-shadow: 3px 3px 7px brown;  
+}
+
+/*---------------- Thumbnail ----------------*/
+/*===========================================*/
+.thumbnail{
+    filter: drop-shadow(10px 10px 10px #795548);
+    border-radius: 10px;
+}
+.thumbnail:hover{
+  cursor:pointer;
+}
+
+/*------------- log in Page ------------*/
+/*====================================*/
+.form-login {
+  border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+  outline: none;
+}
+
+/*-----------Image of movie-----------*/
+/*====================================*/
+.img1
+{   
+    filter: drop-shadow(3px 3px 5px #795548); 
+    border-radius: 10px; 
+}
+
+.data
+{
+    font-size: 20px;
+    color:pink;
+    font-family: Lucida Sans;
+    text-shadow: 3px 3px 5px blue;
+}
+
+#h1
+{
+    color: white;
+    text-shadow: 3px 3px 5px #ffc40c;
+}
+
+.tdclass
+{
+   color:#ffc40c;
+  /* text-shadow: 2px 2px 5px white; */
+}
+
+/*---------------- Review link Css-------------------*/
+/*===================================================*/
+.review:link, .review:visited {
+  background-color: #ffc40c;
+  color:black;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.review:hover, .review:active {
+  background-color: orange;
+  color:white;
+}
+
+.review
+{
+  border-radius: 20px;
+  font-family: Lucida Sans;
+  font-size: 20px;
+}
+
+/*------------ Zoom of Photos -----------*/
+/*=======================================*/
+.zoom {
+  transition: transform .3s;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+/*------------ Error Span ------------*/
+/*=======================================*/
+
+#errorSpan{
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 15px 10px 15px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('img/closeErr.png');
+  width: 50%;
+  border-radius: 40px;
+}
+
+/*----------------- Back Link -------------------*/
+/*===============================================*/
+.backlink
+{
+  color: black;
+  padding: 14px 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-family: arial;
+  background-color: #ffc40c;
+}
+
+.backlink:hover
+{
+  background-color: orange;
+  color:white;
+}
+
+
+/*----------------- emoji -------------------*/
+/*===========================================*/
+.radiobtn{ 
+  position: absolute;
+  opacity: 0;
+}
+
+[type=radio] + img {
+  cursor: pointer;
+  filter: grayscale(80%);
+}
+
+[type=radio]:checked + img {
+ filter: grayscale(0%);
+}
+
+.emoji:hover{ 
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+.emoji{
+  transition: transform .3s;
+}
+
+/*------------------ Feedback CSS ---------------------*/
+/*=====================================================*/
+
+#area
+{
+  width: 500px;
+  padding: 10px 20px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: 3px solid #707070;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 20px;
+  background-color: #F5F5F5;
+}
+
+#area:focus{
+  height: 100px;
+  border: 3px solid #ffc40c;
+  background-color: #f5f5dc;
+}
+
+#feedback{
+  color:white;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+
+/*------------- Submit review CSS ----------------*/
+/*================================================*/
+.btnSubmitclass
+{
+  border:none;
+  width:15%;
+  padding:15px 40px;
+  border-radius:25px;
+  background:#ffc40c;
+  font-weight: bold;
+  font-size: 15px;
+  float: center;
+  outline:none;
+  cursor: pointer;
+}
+
+.btnSubmitclass:hover{
+  background-color: orange;
+  color:white;
+  outline:none; 
+}
+
+/*------------ Error Span ------------*/
+/*=======================================*/
+
+#errorSpan{
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid;
+  margin: 10px 0px;
+  padding: 10px 10px 10px 50px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #D8000C;
+  background-color: #FFBABA;
+  background-image: url('img/closeErr.png');
+  border-radius: 30px;
+}
+
+/*------------------successSpan-----------*/
+/*========================================*/
+#successSpan{
+  left: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #D8D8D8;
+  margin: 10px 300px;
+  padding: 10px 3px 10px 10px;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: green;
+  background-color: rgb(236, 255, 216);
+  background-image: url('img/correct.png');
+  background-size: 32px 32px;
+  border-radius: 30px;
+}
+
+/*------------- Review Uname CSS ---------------*/
+/*==============================================*/
+.imgdiv{
+  display: flex;
+}
+
+.maindiv{
+  display: flex;
+  color:white;
+}
+
+.userNameclass{
+  font-size: 24px;
+  color:pink;
+  font-family: Lucida Sans;
+  text-shadow: 3px 3px 5px blue;
+}
+
+.dateclass{
+  font-size: 15px;
+  color:#ffc40c;
+  font-family: Lucida Sans;
+  text-shadow: 3px 3px 5px blue;
+}
+
+.commentClass{
+  font-family: Lucida Sans;
+}
+
+/*------ Submit Button for delete and update in review and movie deletion -------*/
+/*===============================================================================*/
+.btnSubmit{
+  border:none;
+  padding:10px 50px;
+  border-radius:25px;
+  background:#ffc40c;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  outline: none;
+}
+
+.btnSubmit:hover{
+  background-color: orange;
+  color:white;
+  outline: none;
+}
+

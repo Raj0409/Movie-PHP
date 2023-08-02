@@ -1,0 +1,101 @@
+body{
+	margin:0;
+	padding: 0;
+	color:black;
+	background-image: url(img/bglogin.jpg);
+	width:100%;
+	background-size: cover;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+
+/*------------- Login page --------------*/
+/*=======================================*/
+.login{
+	font-family:sans-serif;
+	width:400px;
+	left:50%;
+	top:50%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	color:#ffc40c;
+	background:rgba(130,127,128,.8);
+	border-radius: 10px;		
+}
+hr{
+	height:2px;
+	background:rgba(255,255,255,.5);
+}
+.int{
+	border:none;
+	padding:15px 80px;
+	border-radius:25px;
+	background:rgba(255,255,255,.4);
+}
+.button{
+	border:none;
+	padding:15px 40px;
+	border-radius:25px;
+	background:rgba(255,255,255,.4);
+	background:#ffc40c;
+	font-weight: bold;
+	font-size: 15px;
+}
+.button:hover{
+	cursor: pointer;
+	background-color: #e1ad01;
+}
+.signup{
+	font-size: 20px;
+	color:black;
+}
+.signup:hover{
+	color:#ffc40c;
+}
+/*----------------- SignUp -----------------*/
+/*==========================================*/
+.sign1{
+	font-family:sans-serif;
+	width:500px;
+	left:50%;
+	top:55%;
+	position:absolute;
+	transform:translate(-50%,-50%);
+	color:#ffc40c;
+	background:rgba(130,127,128,.8);
+	border-radius: 10px;		
+}
+
+.signText{
+	border:none;
+	padding:15px 150px;
+	border-radius:25px;
+	background:rgba(255,255,255,.4);
+}
+.btn{
+	border:none;
+	padding:15px 40px;
+	border-radius:25px;
+	background:rgba(255,255,255,.4);
+	background:#ffc40c;
+	font-weight: bold;
+	font-size: 15px;
+}
+.btn:hover{
+	cursor: pointer;
+	background-color: #e1ad01;
+}
+
+/*------------ Error Span ------------*/
+/*=======================================*/
+
+#errorSpan{
+      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid;
+      margin: 10px 0px;
+      padding: 15px 10px 15px 50px;
+      background-repeat: no-repeat;
+      background-position: 10px center;
+      color: #D8000C;
+      background-color: #FFBABA;
+      background-image: url('img/closeErr.png');
+}
